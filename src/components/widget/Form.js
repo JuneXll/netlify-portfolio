@@ -4,21 +4,18 @@ export default function Form() {
   return (
     <form name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
-      <p>
-        <label htmlFor="name">Name</label> <br />
-        <input type="text" id="name" name="name" required />
-      </p>
-      <p>
-        <label htmlFor="email">Email</label> <br />
-        <input type="email" id="email" name="email" required />
-      </p>
-      <p>
-        <label htmlFor="message">Message</label> <br />
-        <textarea id="message" name="message" required></textarea>
-      </p>
-      <p>
-        <input type="submit" value="Submit message" />
-      </p>
+      
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" name='name' placeholder="Full Name" required/>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="email" name='email' placeholder="Email"/>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" id="message" name='message' rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
     </form>
   );
 }
+

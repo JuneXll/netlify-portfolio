@@ -1,32 +1,10 @@
-// import React, { useState } from 'react';
 import React from 'react';
-// import { Container, Col, Form, Button} from 'react-bootstrap';
 import { Container, Col} from 'react-bootstrap';
 import { CDBAnimation } from "cdbreact";
 import Form from '../widget/Form';
 
-// const encode = (data) => {
-//     return Object.keys(data)
-//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//         .join("&");
-//   }
 
 const Contact = ()=>{
-    // const [form, setForm] = useState({name:'', email:'',message:''})
-
-    // const handleSubmit = e => {
-    //     fetch("/", {
-    //       method: "POST",
-    //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //       body: encode({ "form-name": "contact", ...form })
-    //     })
-    //       .then(() => alert("Success!"))
-    //       .catch(error => alert(error));
-  
-    //     e.preventDefault();
-    //   };
-  
-    //   const handleChange = e => setForm({ [e.target.name]: e.target.value });
 
     return(
         <Container className='h-100 w-100'>
@@ -63,25 +41,6 @@ const Contact = ()=>{
                 </Container>
 
                 <Container className='col-xl-5 col-md-12 py-2 mt-3' style={{backgroundColor:'white', borderRadius:'15px'}}>
-                    {/* <input type="hidden" name="form-name" value="contact" />
-                    <Form name="contact" method="post" onSubmit={handleSubmit}>
-                        <Form.Group className="mb-3" controlId="FullName">
-                            <Form.Label value={form.name} onChange={handleChange}>Full Name</Form.Label>
-                            <Form.Control type="text" placeholder="John Doe" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="Email">
-                            <Form.Label value={form.email} onChange={handleChange}>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="johnd@example.com" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="textArea">
-                            <Form.Label value={form.message} onChange={handleChange}>Message</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
-                        </Form.Group>
-                        <Button variant="outline-dark" type="submit">
-                            Submit
-                        </Button>
-                        
-                    </Form> */}
                     <Form/>
                 </Container>
 
